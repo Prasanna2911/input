@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
+::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    
+}
+.texts{
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.container > div{
+    margin:20px
+}
+.container .input{
+    width:200px;
+    padding:4px 10px 3px;
+    border-radius: 10px;
+    height:40px;
+}
+.container .texts {
+    margin-bottom: 12px;
+}
+.inputdiv-2 input:hover{
+    border:1px solid rgb(2, 250, 2);
+}
+.inputdiv-3 input:focus{
+    background-color:lightslategray;
+    color:#fff;
+    font-weight: 700;
+}
+.inputdiv-3 input:focus::placeholder{
+    color:#fff;
+}
+.inputdiv-4 input{
+    border:1px solid red;
+}
+.inputdiv-4 .txt{
+    color:red;
+    font-weight: 700;
+}
+.inputdiv-4 .input-4:hover{
+   border-color: red;
+}
+.inputdiv-7,
+.inputdiv-8,
+.inputdiv-9,
+.inputdiv-10,
+.inputdiv-11{
+    position: relative;
+}
+.inputdiv-7 .input,
+.inputdiv-11 .input{
+    padding-left:38px;
+}
+
+.icon-1{
+    position: absolute;
+    top:42px;
+    left:8px;
+}
+.icon-2{
+    position: absolute;
+    top:42px;
+    left:140px
+}
+.inputdiv-12 .input{
+    width:150px;
+}
+.inputdiv-13 .input{
+    width:500px;
+}
+.inputdiv-13 {
+    grid-column: 2/4;
+    
+}
+.inputdiv-12 .color-1{
+    color:green;
+    font-weight: 700;
+}
+.parent{
+    width:1200px;
+    grid-column: 1/4;
+}
+.inputdiv-14 .input{
+    width:80%;  
+}
+.inputdiv-15 .input {
+    background-color: chartreuse;
+    outline: none;
+    border:none;
+}
+.inputdiv-16 .input {
+    background-color: crimson;
+    outline: none;
+    border:none;
+}
+.inputdiv-17 .input {
+    background-color: darkblue;
+    outline: none;
+    border:none;
+}
+#input-20  input{
+    height:20px;
+    width:20px
+}
+#labelText{
+    font-size: 20px;
+    font-weight: 600;
+}
+#textarea{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border:1ps solid red;
+}
+.inputdiv-27{
+    grid-column: 1/4;
+}
+@media (max-width:450px) {
+    ::placeholder{
+        font-size: 14px;
+    }
+    #labelText{
+        font-size: 14px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .container .input{
+        width:150px;
+    }
+    #textarea{
+        font-size: 16px;
+    }
+    .inputdiv-7 .input,
+    .inputdiv-8 .input,
+    .inputdiv-9 .input,
+    .inputdiv-10 .input,
+    .inputdiv-11 .input{
+        width:170px;
+    }
+    .inputdiv-7 .input,
+    .inputdiv-11 .input{
+        padding-left:50px;
+    }
+    .inputdiv-12 .input{
+        width:150px;
+    }
+    .inputdiv-13 .input{
+        width:270px;
+    }
+    .parent{
+        width:400px;
+        text-align: center;
+    }
+    .inputdiv-14 .input{
+        width:50%;  
+    }
+    .inputdiv-27 #textarea{
+        width:250px;
+    }
+   
+   
+   
+  
+  
+    
+}
+
+
